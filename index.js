@@ -4,12 +4,12 @@ const { isMatch, search, searchNot } = require("./src/search");
 const { contains                   } = require("./src/contains");
 
 // They get implemented as "primitive" String methods
-String.prototype.equal    = function (compare) { return equal    (this, compare); }
-String.prototype.diff     = function (compare) { return different(this, compare); }
-String.prototype.almost   = function (compare) { return almost   (this, compare); }
-String.prototype.notQuite = function (compare) { return notQuite (this, compare); }
-String.prototype.isMatch  = function (compare) { return isMatch  (this, compare); }
-String.prototype.contains = function (compare) { return contains (this, compare); }
+String.prototype.equal    = function (compare, options = {}) { return equal    (this, compare, options = {}); }
+String.prototype.diff     = function (compare, options = {}) { return different(this, compare, options = {}); }
+String.prototype.almost   = function (compare, options = {}) { return almost   (this, compare, options = {}); }
+String.prototype.notQuite = function (compare, options = {}) { return notQuite (this, compare, options = {}); }
+String.prototype.isMatch  = function (compare, options = {}) { return isMatch  (this, compare, options = {}); }
+String.prototype.contains = function (compare, options = {}) { return contains (this, compare, options = {}); }
 
 exports.equal     = equal;
 exports.different = different;
