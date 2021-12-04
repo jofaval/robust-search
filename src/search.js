@@ -61,4 +61,6 @@ const searchNot = (dataset, original, options = {}) => {
     return occurrences;
 }
 
-exports = { isMatch: isMatch, search: search, searchNot: searchNot };
+exports.isMatch = isMatch;
+exports.search = search;
+exports.searchNot = searchNot;

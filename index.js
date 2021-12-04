@@ -9,12 +9,10 @@ String.prototype.almost   = (string) => almost(this, string);
 String.prototype.notQuite = (string) => notQuite(this, string);
 String.prototype.isMatch  = (string) => isMatch(this, string);
 
-exports = {
-    equal,
-    different,
-    almost,
-    notQuite,
-    isMatch,
-    search,
-    searchNot,
-};
+exports.equal = equal;
+exports.different = different;
+exports.almost = almost;
+exports.notQuite = notQuite;
+exports.isMatch = isMatch;
+exports.search = search;
+exports.searchNot = searchNot;

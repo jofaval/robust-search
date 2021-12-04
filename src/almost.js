@@ -114,4 +114,5 @@ const almost = (original, compare, options = {}) => {
  */
 const notQuite = (original, compare, options = {}) => !almost(original, compare, options);
 
-exports = { almost, notQuite };
+exports.almost = almost;
+exports.notQuite = notQuite;

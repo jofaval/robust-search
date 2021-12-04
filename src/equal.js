@@ -67,4 +67,5 @@ const equal = (original, compare, options = {}) => {
  */
 const different = (original, compare, options = {}) => !equal(original, compare, options);
 
-exports = { equal, different };
+exports.equal = equal;
+exports.different = different;
