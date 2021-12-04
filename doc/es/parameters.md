@@ -23,7 +23,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | compare                   |  **yes**  |  `String` | La segunda string a comparar                                                    |  `null` |
 | options                   |    no     |  `Object` | La configuración del método                                                     |   `{}`  |
 | options.satisfactionScore |    no     |  `Number` | El mínimo de acierto a partir del cual se considera que es casi el mismo.       |  `.85`  |
-| options.minLenProximity   |    no     |  `Number` | Si la longitud de las strings es diferente, ¿a partir de cuánto será demasiado? |   `75`  |
+| options.minLenProximity   |    no     |  `Number` | Si la longitud de las strings es diferente, ¿a partir de cuánto será demasiado? |   `.75`  |
 | options.caseSensitive     |    no     | `Boolean` | ¿Tendrá en cuenta la diferencia entre mayúsculas y minúsculas?                  | `false` |
 
 ## Contains parameters

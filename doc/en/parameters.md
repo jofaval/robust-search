@@ -23,7 +23,7 @@ Tables generated with [https://www.tablesgenerator.com/markdown_tables](https://
 | compare                   |  **yes** |  `String` | The second string to be compared                                         |  `null` |
 | options                   |    no    |  `Object` | The method configuration                                                 |   `{}`  |
 | options.satisfactionScore |    no    |  `Number` | The minimum score of almost the same to say it's really almost the same. |  `.85`  |
-| options.minLenProximity   |    no    |  `Number` | If the two strings have different lengths, when will it be too much?     |   `75`  |
+| options.minLenProximity   |    no    |  `Number` | If the two strings have different lengths, when will it be too much?     |   `.75`  |
 | options.caseSensitive     |    no    | `Boolean` | Will it take into account upper/lower case difference?                   | `false` |
 
 ## Contains parameters
