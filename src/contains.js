@@ -4,8 +4,8 @@
  * @param {String} original The original string to compare
  * @param {String} compare The second string to be compared
  * @param {Object} [options] The configuration parameters
- * @param {Boolean} [options.inOrder] Must it be in the same exact order? True by default
- * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference.
+ * @param {Boolean} [options.inOrder] Must it be in the same exact order? ***True** by default*
+ * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference? ***False** by default*
  * 
  * @returns {Boolean} Does it contain the substring?
  */

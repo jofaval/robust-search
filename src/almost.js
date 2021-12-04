@@ -32,9 +32,9 @@ const areStrings = (...values) => {
  * @param {String} original The original string to compare
  * @param {String} compare The second string to be compared
  * @param {Object} options The method configuration
- * @param {Number} [options.satisfactionScore] The minimum score of almost the same to say it's really almost the same
- * @param {Number} [options.minLenProximity] If the two strings have different lengths, when will it be too much?
- * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference?
+ * @param {Number} [options.satisfactionScore] The minimum score of almost the same to say it's really almost the same. ***.85** by default*
+ * @param {Number} [options.minLenProximity] If the two strings have different lengths, when will it be too much? ***.75** by default*
+ * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference? ***False** by default*
  * 
  * @returns {Boolean} Are they almost the same?
  */
@@ -117,9 +117,9 @@ const almost = (original, compare, options = {}) => {
  * @param {String} original The original string to compare
  * @param {String} compare The second string to be compared
  * @param {Object} options The method configuration
- * @param {Number} [options.satisfactionScore] The minimum score of almost the same to say it's really almost the same
- * @param {Number} [options.minLenProximity] If the two strings have different lengths, when will it be too much?
- * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference.
+ * @param {Number} [options.satisfactionScore] The minimum score of almost the same to say it's really almost the same. ***.85** by default*
+ * @param {Number} [options.minLenProximity] If the two strings have different lengths, when will it be too much? ***.75** by default*
+ * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference? ***False** by default*
  * 
  * @returns {Boolean} Are they almost **NOT** the same?
  */

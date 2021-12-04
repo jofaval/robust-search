@@ -4,10 +4,10 @@
  * @param {String} original The original string to compare.
  * @param {String} compare The second string to be compared.
  * @param {Object} [options] The comparison options.
- * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference.
- * @param {Boolean} [options.exact] Will it be an exact match of type?
- * @param {Boolean} [options.ignoreSpaces] Will it ignore spaces?
- * @param {String[]} [options.ignoreChars] Ignores the given chars.
+ * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference? ***False** by default*
+ * @param {Boolean} [options.exact] Will it be an exact match of type? ***False** by default*
+ * @param {Boolean} [options.ignoreSpaces] Will it ignore spaces? ***False** by default*
+ * @param {String[]} [options.ignoreChars] Ignores the given chars. ***False** by default*
  * 
  * @returns {Boolean} If they're equal or not.
  */
@@ -58,10 +58,10 @@ const equal = (original, compare, options = {}) => {
  * @param {String} original The original string to compare.
  * @param {String} compare The second string to be compared.
  * @param {Object} [options] The comparison options.
- * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference.
- * @param {Boolean} [options.exact] Will it be an exact match of type?
- * @param {Boolean} [options.ignoreSpaces] Will it ignore spaces?
- * @param {String[]} [options.ignoreChars] Ignores the given chars.
+ * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference? ***False** by default*
+ * @param {Boolean} [options.exact] Will it be an exact match of type? ***False** by default*
+ * @param {Boolean} [options.ignoreSpaces] Will it ignore spaces? ***False** by default*
+ * @param {String[]} [options.ignoreChars] Ignores the given chars. ***False** by default*
  * 
  * @returns {Boolean} If they're different or not.
  */
