@@ -29,6 +29,9 @@ const equal = (original, compare, options = {}) => {
         compare = compare.replace(/\s+/, '');
     }
 
+    // Ignores the given chars
+    // TODO: to implement, inside the for-loop or an outside regex replace? it'd be faster the first option
+
     // If it's exact, there's no need to compare anymore
     if (options.exact) return original === compare;
 
