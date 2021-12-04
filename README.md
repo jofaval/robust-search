@@ -7,7 +7,7 @@ Download at, [NPM-Package site](www.npmjs.com/package/robust-search) or https://
 It's a robust and flexible search component.
 ### Objective
 It allows for an almost match, i.e., "Jenna" wouldn't equal "jena", but now it can.
-So it's objectivie it's to give more tools to compare, taking into account user's human mistakes
+So it's objective it's to give more tools to compare, taking into account user's human mistakes
 
 ## Usage
 For the parameters, [click here](/doc/en/parameters.md)
