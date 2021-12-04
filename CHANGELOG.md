@@ -4,3 +4,4 @@
 - Draft defined
 - npm package created
 - equal, almost and search implemented (and their counterpars; different, notQuite, searchNot)
+- String prototype implementations
