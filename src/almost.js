@@ -56,8 +56,6 @@ const almost = (original, compare, options = {}) => {
         compare = compare.toUpperCase();
     }
 
-    // TODO: implement case sensitive detection
-
     // TODO: Implement minLenProximity in search?
     // Compare the lengths to determine the method to use
     if ((Math.min(originalLen, compareLen) / Math.max(originalLen, compareLen)) < options.minLenProximity) {
