@@ -19,8 +19,8 @@ const equal = (original, compare, options = {}) => {
 
     // If it's not caseSensitive, characters will be forced to lowercase
     if (options.caseSensitive) {
-        original = original.toLowerCase();
-        compare = compare.toLowerCase();
+        original = original.toUpperCase();
+        compare = compare.toUpperCase();
     }
 
     // If spaces are ignored, they're removed before the comparison
