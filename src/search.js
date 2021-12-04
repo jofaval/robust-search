@@ -9,6 +9,8 @@
 const isMatch = (original, compare) => almost(original, compare) || equal(original, compare);
 
 /**
+ * **WARNING!!** It's an efficiency heavy operation it uses "almost".
+ * ---------------
  * Search for a value in a string array
  * 
  * @param {Array} dataset The array containing the strings
@@ -35,6 +37,8 @@ const search = (dataset, original, options = {}) => {
 };
 
 /**
+ * **WARNING!!** It's an efficiency heavy operation it uses "almost".
+ * ---------------
  * Search for everything but the value in a string array
  * 
  * @param {Array} dataset The array containing the strings
