@@ -47,6 +47,10 @@ const searchNot = (dataset, original, options = {}) => {
     let occurrences = [];
 
     const datasetLen = dataset.length
+
+    // oneliner, test efficiency, nope, it's way slower than a for-loop
+    // occurrences = dataset.filter(compare => !isMatch(original, compare));
+
     for (let datasetIndex = 0; datasetIndex < datasetLen; datasetIndex++) {
         const compare = dataset[datasetIndex];
 
