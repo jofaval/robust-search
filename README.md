@@ -4,4 +4,4 @@
 [![Disponible en Castellano](https://img.shields.io/badge/lang-es-red.svg)](/doc/es/)
 <br />
 <br />
-Package details at: [robust-search](www.npmjs.com/package/robust-search) or https://www.npmjs.com/package/robust-search
+Package details at: [robust-search](https://www.npmjs.com/package/robust-search) or https://www.npmjs.com/package/robust-search

@@ -1,7 +1,7 @@
 # Robust Search #
 [![Disponible en Castellano](https://img.shields.io/badge/lang-es-red.svg)](/doc/es/)
 
-Download at, [NPM-Package site](www.npmjs.com/package/robust-search) or https://www.npmjs.com/package/robust-search
+Download at, [NPM-Package site](https://www.npmjs.com/package/robust-search) or https://www.npmjs.com/package/robust-search
 
 ## Description
 It's a robust and flexible search component.
