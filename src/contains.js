@@ -10,8 +10,6 @@
  * @returns {Boolean} Does it contain the substring?
  */
 const contains = (original, compare, options = {}) => {
-    if (options)
-
     // includes is way faster
     let matches = 0;
 
