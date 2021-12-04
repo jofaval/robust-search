@@ -125,3 +125,16 @@ const notQuite = (original, compare, options = {}) => !almost(original, compare,
 
 exports.almost = almost;
 exports.notQuite = notQuite;
+
+/**
+ * String implementations
+ */
+// Almost
+String.prototype.almost = function (compare, options = {}) {
+    return almost(this, compare, options);
+}
+
+// Not quite
+String.prototype.notQuite = function (compare, options = {}) {
+    return notQuite (this, compare, options);
+}

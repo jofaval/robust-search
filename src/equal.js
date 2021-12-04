@@ -72,3 +72,33 @@ const different = (original, compare, options = {}) => !equal(original, compare,
 
 exports.equal = equal;
 exports.different = different;
+
+/**
+ * String implementations
+ */
+// Equal
+String.prototype.equal = function (compare, options = {}) {
+    return equal(this, compare, options);
+}
+// Native implementation
+String.prototype._equal = function (compare) {
+    return this.toUpperCase() == compare.toUpperCase();
+}
+
+// Exact
+String.prototype.exact = function (compare) {
+    return equal(this, compare, { exact: true });
+}
+// Native implementation
+String.prototype._exact = function (compare) {
+    return this === compare;
+}
+
+// Different
+String.prototype.diff = function (compare, options = {}) {
+    return different(this, compare, options);
+}
+// Native implementation
+String.prototype._diff = function (compare) {
+    return !this._equal(compare);
+}

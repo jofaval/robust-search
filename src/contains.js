@@ -62,3 +62,11 @@ const contains = (original, compare, options = {}) => {
 }
 
 exports.contains = contains;
+
+/**
+ * String implementations
+ */
+// Contains
+String.prototype.contains = function (compare, options = {}) {
+    return contains(this, compare, options);
+}

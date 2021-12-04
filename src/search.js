@@ -68,3 +68,11 @@ const searchNot = (dataset, original, options = {}) => {
 exports.isMatch = isMatch;
 exports.search = search;
 exports.searchNot = searchNot;
+
+/**
+ * String implementations
+ */
+// Is match
+String.prototype.isMatch = function (compare, options = {}) {
+    return isMatch(this, compare, options);
+}
