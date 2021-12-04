@@ -111,8 +111,6 @@ const almost = (original, compare, options = {}) => {
  * 
  * @returns {Boolean} Are they almost **NOT** the same?
  */
-const notQuite = (original, compare, options = {}) => {
-    return !almost(original, compare, options);
-};
+const notQuite = (original, compare, options = {}) => !almost(original, compare, options);
 
 exports = { almost, notQuite };
