@@ -10,6 +10,10 @@ It allows for an almost match, i.e., "Jenna" wouldn't equal "jena", but now it c
 So it's objectivie it's to give more tools to compare, taking into account user's human mistakes
 
 ## Usage
+For the parameters, [click here](/doc/en/parameters.md)
+<br />
+For advanced examples, [click here](/doc/en/advanced.md)
+
 ### Import
 Without this, it won't work
 ````

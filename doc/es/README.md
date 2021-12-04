@@ -10,6 +10,10 @@ Permite buscar coincidencias cercanas, "Jenna" no sería una coincidencia de "je
 El objetivo es dar más herramientas para comparar, teniendo en cuenta los fallos humanos del usuario.
 
 ## Uso
+Para los parámetros, [clica aquí](/doc/es/parameters.md)
+<br />
+Para ejemplos avanzados, [clica aquí](/doc/es/advanced.md)
+
 ### Import
 Sin esto, no funcionará
 ````
