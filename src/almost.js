@@ -48,6 +48,7 @@ const almost = (original, compare, options = {}) => {
     const originalLen = original.length;
     const compareLen = compare.length;
 
+    // TODO: Implement minLenProximity in search?
     // Compare the lengths to determine the method to use
     if ((Math.min(originalLen, compareLen) / Math.max(originalLen, compareLen)) < options.minLenProximity) {
         // If there's too much length difference, an almost match will happen if the substring is found
