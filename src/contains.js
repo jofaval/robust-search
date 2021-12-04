@@ -20,8 +20,8 @@ const contains = (original, compare, options = {}) => {
     // If the substring is longer than the original, it won't be found
     if (compareLen > originalLen) return false;
 
-    if (!options?.inOrder) options?.inOrder = false;
-    if (!options?.caseSensitive) options?.caseSensitive = false;
+    if (!options?.inOrder) options.inOrder = false;
+    if (!options?.caseSensitive) options.caseSensitive = false;
 
     const { inOrder, caseSensitive } = options;
 
