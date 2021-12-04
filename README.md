@@ -40,13 +40,13 @@ Is a `string` not the same as another?
 "test".diff("tset") // returns true
 ````
 ### String.prototype.almost
-Is a `string` the almost same as another?
+Is a `string` almost same as another?
 ````
 // String almost
 "test".almost("tset") // returns true
 ````
 ### String.prototype.notQuite
-Is a `string` the not quite same as another?
+Is a `string` not quite the same as another?
 ````
 // String notQuite
 "test".notQuite("tset") // returns false
