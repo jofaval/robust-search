@@ -3,11 +3,11 @@ const { equal, different } = require("./src/equal");
 const { isMatch, search, searchNot } = require("./src/search");
 
 // They get implemented as "primitive" String methods
-String.prototype.equal = equal;
-String.prototype.diff = different;
-String.prototype.almost = almost;
-String.prototype.notQuite = notQuite;
-String.prototype.isMatch = isMatch;
+String.prototype.equal    = (string) => equal(this, string);
+String.prototype.diff     = (string) => different(this, string);
+String.prototype.almost   = (string) => almost(this, string);
+String.prototype.notQuite = (string) => notQuite(this, string);
+String.prototype.isMatch  = (string) => isMatch(this, string);
 
 exports = {
     equal,
