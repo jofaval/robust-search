@@ -1,0 +1,24 @@
+{
+  "name": "robust-search",
+  "version": "1.0.0",
+  "description": "Allows for a robust string comparison with almost matching options",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jofaval/robust-search.git"
+  },
+  "keywords": [
+    "robust",
+    "search",
+    "open-source"
+  ],
+  "author": "jofaval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jofaval/robust-search/issues"
+  },
+  "homepage": "https://github.com/jofaval/robust-search#readme"
+}
