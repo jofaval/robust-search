@@ -11,7 +11,7 @@
  * 
  * @returns {Boolean} If they're equal or not.
  */
-export const equal = (original, compare, options = {}) => {
+const equal = (original, compare, options = {}) => {
     // If they don't get filled, default values are set in
     if (!options?.caseSensitive) options.caseSensitive = false;
     if (!options?.exact) options.exact = false;
@@ -65,6 +65,6 @@ export const equal = (original, compare, options = {}) => {
  * 
  * @returns {Boolean} If they're different or not.
  */
-export const different = (original, compare, options = {}) => !equal(original, compare, options);
+const different = (original, compare, options = {}) => !equal(original, compare, options);
 
-export default equal;
+exports = { equal, different };

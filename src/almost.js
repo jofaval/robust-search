@@ -37,7 +37,7 @@ const areStrings = (...values) => {
  * 
  * @returns {Boolean} Are they almost the same?
  */
-export const almost = (original, compare, options = {}) => {
+const almost = (original, compare, options = {}) => {
     // They all must be strings
     if (!areStrings(original, compare)) return false;
 
@@ -111,8 +111,8 @@ export const almost = (original, compare, options = {}) => {
  * 
  * @returns {Boolean} Are they almost **NOT** the same?
  */
-export const notQuite = (original, compare, options = {}) => {
+const notQuite = (original, compare, options = {}) => {
     return !almost(original, compare, options);
 };
 
-export default almost;
+exports = { almost, notQuite };
