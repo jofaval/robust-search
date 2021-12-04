@@ -1,5 +1,6 @@
 // TODO: implement, string and array, two different implementations, one calls the other?
 /**
+ * Attempts to find a busstring inside the original string
  * 
  * @param {String} original The original string to compare
  * @param {String} compare The second string to be compared
