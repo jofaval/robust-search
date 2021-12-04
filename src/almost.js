@@ -34,6 +34,7 @@ const areStrings = (...values) => {
  * @param {Object} options The method configuration
  * @param {Number} [options.satisfactionScore] The minimum score of almost the same to say it's really almost the same
  * @param {Number} [options.minLenProximity] If the two strings have different lengths, when will it be too much?
+ * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference?
  * 
  * @returns {Boolean} Are they almost the same?
  */
@@ -41,12 +42,21 @@ const almost = (original, compare, options = {}) => {
     // They all must be strings
     if (!areStrings(original, compare)) return false;
 
-    // Default values are placed
+    // Default values are set
     if (!options?.satisfactionScore) options.satisfactionScore = .85;
     if (!options?.minLenProximity) options.minLenProximity = .75;
+    if (!options?.caseSensitive) options.caseSensitive = false;
 
     const originalLen = original.length;
     const compareLen = compare.length;
+
+    // Implements case insensitive options, it's sensitive by default
+    if (!options.caseSensitive) {
+        original = original.toUpperCase();
+        compare = compare.toUpperCase();
+    }
+
+    // TODO: implement case sensitive detection
 
     // TODO: Implement minLenProximity in search?
     // Compare the lengths to determine the method to use
@@ -109,6 +119,7 @@ const almost = (original, compare, options = {}) => {
  * @param {Object} options The method configuration
  * @param {Number} [options.satisfactionScore] The minimum score of almost the same to say it's really almost the same
  * @param {Number} [options.minLenProximity] If the two strings have different lengths, when will it be too much?
+ * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference.
  * 
  * @returns {Boolean} Are they almost **NOT** the same?
  */
