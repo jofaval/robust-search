@@ -1,5 +1,5 @@
 # Robust Search #
-Available in English [![en](https://img.shields.io/badge/lang-en-blue.svg)](/README.md)
+Available in English [![en](https://img.shields.io/badge/lang-en-blue.svg)](/doc/en/)
 
 Descárgatelo en, [NPM-Package site](www.npmjs.com/package/robust-search) o https://www.npmjs.com/package/robust-search
 
