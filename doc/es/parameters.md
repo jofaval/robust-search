@@ -4,6 +4,7 @@ Also available in English [![es](https://img.shields.io/badge/lang-es-blue.svg)]
 Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://www.tablesgenerator.com/markdown_tables)
 
 ## Parámetros de Equal/Diff/Different
+Compara dos strings para saber si son iguales o son diferentes
 **Returns** `Boolean`
 | nombre                | requerido |    tipo    | descripción                                                    | defecto |
 |-----------------------|:---------:|:----------:|----------------------------------------------------------------|:-------:|
@@ -16,6 +17,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | options.ignoreChars   |    no     | `String[]` | Ignora los carácteres recibidos.                               | `false` |
 
 ## Parámetros de Exact
+Compara dos strings para saber si son exactamente la misma
 **Returns** `Boolean`
 | nombre                | requerido |    tipo    | descripción                               | defecto |
 |-----------------------|:---------:|:----------:|-------------------------------------------|:-------:|
@@ -26,6 +28,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | options.ignoreChars   |    no     | `String[]` | Ignora los carácteres recibidos.          | `false` |
 
 ## Parámetros de Almost/Unalike
+Compara dos strings para saber si son casi la misma no son casi la misma
 **Returns** `Boolean`
 | nombre                    | requerido |    tipo   | descripción                                                                     | defecto |
 |---------------------------|:---------:|:---------:|---------------------------------------------------------------------------------|:-------:|
@@ -37,6 +40,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | options.caseSensitive     |    no     | `Boolean` | ¿Tendrá en cuenta la diferencia entre mayúsculas y minúsculas?                  | `false` |
 
 ## Parámetros de Contains
+Compara dos strings para saber si la primera contiene la substring resultante que es la otra
 **Returns** `Boolean`
 | nombre                | requerido |    tipo   | descripción                                                    | defecto |
 |-----------------------|:---------:|:---------:|----------------------------------------------------------------|:-------:|
@@ -47,6 +51,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | options.caseSensitive |    no     | `Boolean` | ¿Tendrá en cuenta la diferencia entre mayúsculas y minúsculas? | `false` |
 
 ## Parámetros de IsMatch/IsNotMatch
+Compara dos strings para saber si hay coincidencia entre ellas, bien sea porque son iguales, o porque se parecen
 **Returns** `Boolean`
 | nombre   | requerido |   tipo   | descripción                              | defecto |
 |----------|:---------:|:--------:|------------------------------------------|:-------:|
@@ -54,6 +59,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | compare  |  **yes**  | `String` | La segunda string a comparar             |  `null` |
 
 ## Parámetros de Search/Exclude
+Realiza una búsqueda en un array de strings usando los métodos de comparación mencionados anteriormente
 **Returns** `Array`
 | nombre   | requerido |   tipo   | descripción                              | defecto |
 |----------|:---------:|:--------:|------------------------------------------|:-------:|

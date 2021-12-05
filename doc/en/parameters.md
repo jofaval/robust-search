@@ -4,6 +4,7 @@ Versión disponible en Castellano [![es](https://img.shields.io/badge/lang-es-re
 Tables generated with [https://www.tablesgenerator.com/markdown_tables](https://www.tablesgenerator.com/markdown_tables)
 
 ## Equal/Diff/Different parameters
+Compare two strings to see if they are the same or different
 **Returns** `Boolean`
 | name                  | required |    type    | description                                            | default |
 |-----------------------|:--------:|:----------:|--------------------------------------------------------|:-------:|
@@ -16,6 +17,7 @@ Tables generated with [https://www.tablesgenerator.com/markdown_tables](https://
 | options.ignoreChars   |    no    | `String[]` | Ignores the given chars.                               | `false` |
 
 ## Exact parameters
+Compare two strings to see if they are exactly the same
 **Returns** `Boolean`
 | name                  | required |    type    | description                       | default |
 |-----------------------|:--------:|:----------:|-----------------------------------|:-------:|
@@ -26,6 +28,7 @@ Tables generated with [https://www.tablesgenerator.com/markdown_tables](https://
 | options.ignoreChars   |    no    | `String[]` | Ignores the given chars.          | `false` |
 
 ## Almost/Unalike parameters
+Compare two strings to see if they are almost the same they are not almost the same
 **Returns** `Boolean`
 | name                      | required |    type   | description                                                              | default |
 |---------------------------|:--------:|:---------:|--------------------------------------------------------------------------|:-------:|
@@ -37,6 +40,7 @@ Tables generated with [https://www.tablesgenerator.com/markdown_tables](https://
 | options.caseSensitive     |    no    | `Boolean` | Will it take into account upper/lower case difference?                   | `false` |
 
 ## Contains parameters
+Compare two strings to find out if the first contains the resulting substring which is the other
 **Returns** `Boolean`
 | name                  | required |    type   | description                                            | default |
 |-----------------------|:--------:|:---------:|--------------------------------------------------------|:-------:|
@@ -47,6 +51,7 @@ Tables generated with [https://www.tablesgenerator.com/markdown_tables](https://
 | options.caseSensitive |    no    | `Boolean` | Will it take into account upper/lower case difference? | `false` |
 
 ## IsMatch/IsNotMatch parameters
+Compare two strings to see if there is a match between them, either because they are the same, or because they are similar
 **Returns** `Boolean`
 | name     | required |   type   | description                      | default |
 |----------|:--------:|:--------:|----------------------------------|:-------:|
@@ -54,6 +59,7 @@ Tables generated with [https://www.tablesgenerator.com/markdown_tables](https://
 | compare  |  **yes** | `String` | The second string to be compared |  `null` |
 
 ## Search/Exclude parameters
+Perform a search on an array of strings using the comparison methods mentioned above
 **Returns** `Array`
 | name     | required |   type   | description                      | default |
 |----------|:--------:|:--------:|----------------------------------|:-------:|
