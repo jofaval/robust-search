@@ -61,9 +61,11 @@ Compare two strings to see if there is a match between them, either because they
 ## Search/Exclude parameters
 Perform a search on an array of strings using the comparison methods mentioned above
 **Returns** `Array`
-|        name        | required |   type   | description                      | default |
-|--------------------|:--------:|:--------:|----------------------------------|:-------:|
-| dataset            |  **yes** |  `Array` | The array containing the strings |  `null` |
-| original           |  **yes** | `String` | The original string to compare   |  `null` |
-| options            |    no    | `Object` | The configuration options        |   `{}`  |
-| options.justThere  |    no    | `Object` | Will just check if it's there   | `false` |
+| name              | required |        type        | description                         | default |
+|-------------------|:--------:|:------------------:|-------------------------------------|:-------:|
+| dataset           |  **yes** |       `Array`      | The array containing the strings    |  `null` |
+| original          |  **yes** |      `String`      | The original string to compare      |  `null` |
+| options           |    no    |      `Object`      | The configuration options           |   `{}`  |
+| options.justThere |    no    |      `Object`      | Will just check if it's there       | `false` |
+| options.filter    |    no    | `CallableFunction` | The callable filter function        |  `null` |
+| options.json      |    no    |      `Boolean`     | Does the array contain objects/json | `false` |

@@ -61,9 +61,11 @@ Compara dos strings para saber si hay coincidencia entre ellas, bien sea porque 
 ## Parámetros de Search/Exclude
 Realiza una búsqueda en un array de strings usando los métodos de comparación mencionados anteriormente
 **Returns** `Array`
-|       nombre       | requerido |   tipo   | descripción                              | defecto |
-|--------------------|:---------:|:--------:|------------------------------------------|:-------:|
-| dataset            |  **yes**  |  `Array` | The array containing the strings         |  `null` |
-| original           |  **yes**  | `String` | La string original sobre la que comparar |  `null` |
-| options            |    no     | `Object` | Las opciones de configuración            |   `{}`  |
-| options.justThere  |    no     | `Object` | Solamente comprobará si está ahí         | `false` |
+| nombre            | requerido |        tipo        | descripción                              | defecto |
+|-------------------|:---------:|:------------------:|------------------------------------------|:-------:|
+| dataset           |  **yes**  |       `Array`      | The array containing the strings         |  `null` |
+| original          |  **yes**  |      `String`      | La string original sobre la que comparar |  `null` |
+| options           |     no    |      `Object`      | Las opciones de configuración            |   `{}`  |
+| options.justThere |     no    |      `Object`      | Solamente comprobará si está ahí         | `false` |
+| options.filter    |     no    | `CallableFunction` | La función de filtrado                   |  `null` |
+| options.json      |     no    |      `Boolean`     | ¿El array contiene valores json/objeto?  | `false` |
