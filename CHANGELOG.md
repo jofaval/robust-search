@@ -3,6 +3,6 @@
 - Github repository created
 - Draft defined
 - npm package created
-- equal, almost and search implemented (and their counterpars; different, notQuite, exclude)
+- equal, almost and search implemented (and their counterpars; different, unalike, exclude)
 - String prototype implementations
 - Implemented contains

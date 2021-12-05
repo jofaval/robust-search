@@ -21,7 +21,7 @@ import {
     equal,
     different,
     almost,
-    notQuite,
+    unalike,
     isMatch,
     search,
     exclude,
@@ -49,11 +49,11 @@ Is a `string` almost same as another?
 // String almost
 "test".almost("tset") // returns true
 ````
-### String.prototype.notQuite
+### String.prototype.unalike
 Is a `string` not quite the same as another?
 ````
-// String notQuite
-"test".notQuite("tset") // returns false
+// String unalike
+"test".unalike("tset") // returns false
 ````
 ### String.prototype.isMatch
 This will use all of the above to check for a match

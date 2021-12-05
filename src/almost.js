@@ -123,10 +123,10 @@ const almost = (original, compare, options = {}) => {
  * 
  * @returns {Boolean} Are they almost **NOT** the same?
  */
-const notQuite = (original, compare, options = {}) => !almost(original, compare, options);
+const unalike = (original, compare, options = {}) => !almost(original, compare, options);
 
 exports.almost = almost;
-exports.notQuite = notQuite;
+exports.unalike = unalike;
 
 /**
  * String implementations
@@ -137,6 +137,6 @@ String.prototype.almost = function (compare, options = {}) {
 }
 
 // Not quite
-String.prototype.notQuite = function (compare, options = {}) {
-    return notQuite (this, compare, options);
+String.prototype.unalike = function (compare, options = {}) {
+    return unalike(this, compare, options);
 }

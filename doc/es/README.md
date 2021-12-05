@@ -21,7 +21,7 @@ import {
     equal,
     different,
     almost,
-    notQuite,
+    unalike,
     isMatch,
     search,
     exclude,
@@ -49,11 +49,11 @@ import {
 // String almost
 "test".almost("tset") // devuelve true
 ````
-### String.prototype.notQuite
+### String.prototype.unalike
 ¿La `string` no llega a ser casi la misma que otra?
 ````
-// String notQuite
-"test".notQuite("tset") // devuelve false
+// String unalike
+"test".unalike("tset") // devuelve false
 ````
 ### String.prototype.isMatch
 Esto usará todos los métodos de arriba para determinar una coincidencia

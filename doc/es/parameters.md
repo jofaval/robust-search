@@ -15,7 +15,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | options.ignoreSpace   |    no     |  `Boolean` | ¿Ignorará espacios?                                            | `false` |
 | options.ignoreChars   |    no     | `String[]` | Ignora los carácteres recibidos.                               | `false` |
 
-## Almost/NotQuite parameters
+## Almost/Unalike parameters
 **Returns** `Boolean`
 | nombre                    | requerido |    tipo   | descripción                                                                     | defecto |
 |---------------------------|:---------:|:---------:|---------------------------------------------------------------------------------|:-------:|
