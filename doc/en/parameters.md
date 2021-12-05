@@ -15,6 +15,16 @@ Tables generated with [https://www.tablesgenerator.com/markdown_tables](https://
 | options.ignoreSpace   |    no    |  `Boolean` | Will it ignore spaces?                                 | `false` |
 | options.ignoreChars   |    no    | `String[]` | Ignores the given chars.                               | `false` |
 
+## Exact parameters
+**Returns** `Boolean`
+| name                  | required |    type    | description                       | default |
+|-----------------------|:--------:|:----------:|-----------------------------------|:-------:|
+| original              |  **yes** |  `String`  | The original string to compare.   |  `null` |
+| compare               |  **yes** |  `String`  | The second string to be compared. |  `null` |
+| options               |    no    |  `Object`  | The comparison options.           |   `{}`  |
+| options.ignoreSpace   |    no    |  `Boolean` | Will it ignore spaces?            | `false` |
+| options.ignoreChars   |    no    | `String[]` | Ignores the given chars.          | `false` |
+
 ## Almost/Unalike parameters
 **Returns** `Boolean`
 | name                      | required |    type   | description                                                              | default |

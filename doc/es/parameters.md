@@ -15,6 +15,16 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | options.ignoreSpace   |    no     |  `Boolean` | ¿Ignorará espacios?                                            | `false` |
 | options.ignoreChars   |    no     | `String[]` | Ignora los carácteres recibidos.                               | `false` |
 
+## Exact parameters
+**Returns** `Boolean`
+| nombre                | requerido |    tipo    | descripción                               | defecto |
+|-----------------------|:---------:|:----------:|-------------------------------------------|:-------:|
+| original              |  **yes**  |  `String`  | La string original sobre la que comparar. |  `null` |
+| compare               |  **yes**  |  `String`  | La segunda string a comparar.             |  `null` |
+| options               |    no     |  `Object`  | Las opciones de comparación.              |   `{}`  |
+| options.ignoreSpace   |    no     |  `Boolean` | ¿Ignorará espacios?                       | `false` |
+| options.ignoreChars   |    no     | `String[]` | Ignora los carácteres recibidos.          | `false` |
+
 ## Almost/Unalike parameters
 **Returns** `Boolean`
 | nombre                    | requerido |    tipo   | descripción                                                                     | defecto |
