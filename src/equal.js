@@ -91,29 +91,81 @@ exports.different = different;
 /**
  * String implementations
  */
-// Equal
+/**
+ * Comapres two strings and returns if they're equal.
+ * 
+ * @param {String} original The original string to compare.
+ * @param {String} compare The second string to be compared.
+ * @param {Object} [options] The comparison options.
+ * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference? ***False** by default*
+ * @param {Boolean} [options.exact] Will it be an exact match of type? ***False** by default*
+ * @param {Boolean} [options.ignoreSpaces] Will it ignore spaces? ***False** by default*
+ * @param {String[]} [options.ignoreChars] Ignores the given chars. ***False** by default*
+ * 
+ * @returns {Boolean} If they're equal or not.
+ */
 String.prototype.equal = function (compare, options = {}) {
     return equal(this, compare, options);
 }
-// Native implementation
+/**
+ * Native implementation - Comapres two strings and returns if they're equal.
+ * 
+ * @param {String} compare The string to be compared.
+ * 
+ * @returns {Boolean} If they're equal or not.
+ */
 String.prototype._equal = function (compare) {
     return this.toUpperCase() == compare.toUpperCase();
 }
 
-// Exact
+/**
+ * Comapres two strings and returns if they're exactly the same.
+ * 
+ * @param {String} original The original string to compare.
+ * @param {String} compare The second string to be compared.
+ * @param {Object} [options] The comparison options.
+ * @param {Boolean} [options.ignoreSpaces] Will it ignore spaces? ***False** by default*
+ * @param {String[]} [options.ignoreChars] Ignores the given chars. ***False** by default*
+ * 
+ * @returns {Boolean} If they're exact or not.
+ */
 String.prototype.exact = function (compare, options = {}) {
     return exact(this, compare, options);
 }
-// Native implementation
+/**
+ * Native implementation - Comapres two strings and returns if they're exactly the same.
+ * 
+ * @param {String} compare The string to be compared.
+ * 
+ * @returns {Boolean} If they're exact or not.
+ */
 String.prototype._exact = function (compare) {
     return this === compare;
 }
 
-// Different
+/**
+ * Comapres two strings and returns if they're different, **NOT** equal.
+ * 
+ * @param {String} original The original string to compare.
+ * @param {String} compare The second string to be compared.
+ * @param {Object} [options] The comparison options.
+ * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference? ***False** by default*
+ * @param {Boolean} [options.exact] Will it be an exact match of type? ***False** by default*
+ * @param {Boolean} [options.ignoreSpaces] Will it ignore spaces? ***False** by default*
+ * @param {String[]} [options.ignoreChars] Ignores the given chars. ***False** by default*
+ * 
+ * @returns {Boolean} If they're different or not.
+ */
 String.prototype.diff = function (compare, options = {}) {
     return different(this, compare, options);
 }
-// Native implementation
+/**
+ * Native implementation - Comapres two strings and returns if they're different, **NOT** equal.
+ * 
+ * @param {String} compare The string to be compared.
+ * 
+ * @returns {Boolean} If they're different or not.
+ */
 String.prototype._diff = function (compare) {
     return !this._equal(compare);
 }

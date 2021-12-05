@@ -72,11 +72,23 @@ exports.exclude = exclude;
 /**
  * String implementations
  */
-// Is match
+/**
+ * Determines if two values are a match or not
+ * 
+ * @param {String} compare The string to be compared
+ * 
+ * @returns {Boolean} Are they a match?
+ */
 String.prototype.isMatch = function (compare, options = {}) {
     return isMatch(this, compare, options);
 }
-// Is not a match
+/**
+ * Determines if two values are a match or not
+ * 
+ * @param {String} compare The string to be compared
+ * 
+ * @returns {Boolean} Are they **NOT** a match?
+ */
 String.prototype.isNotMatch = function (compare, options = {}) {
     return !isMatch(this, compare, options);
 }

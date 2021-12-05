@@ -131,12 +131,43 @@ exports.unalike = unalike;
 /**
  * String implementations
  */
-// Almost
+
+/**
+ * **WARNING!!** It's an efficiency heavy operation compared to the "equal".
+ * ---------------
+ * ### Only works with **String**.
+ * Compares two strings and determines wether they're close or not, it may be an almost the same string
+ * Specially good for user input in searches.
+ * 
+ * @param {String} compare The second string to be compared
+ * @param {Object} options The method configuration
+ * @param {Number} [options.satisfactionScore] The minimum score of almost the same to say it's really almost the same. ***.85** by default*
+ * @param {Number} [options.minLenProximity] If the two strings have different lengths, when will it be too much? ***.75** by default*
+ * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference? ***False** by default*
+ * 
+ * @returns {Boolean} Are they almost the same?
+ */
 String.prototype.almost = function (compare, options = {}) {
     return almost(this, compare, options);
 }
 
-// Not quite
+/**
+ * **WARNING!!** It's an efficiency heavy operation compared to the "equal".
+ * ---------------
+ * ### Only works with **String**.
+ * Compares two strings and determines wether they're close or not, it may be an almost the same string
+ * Specially good for user input in searches.
+ * 
+ * *This one compares them to see if they're **NOT** close, if they're **NOT** almost the same*.
+ * 
+ * @param {String} compare The second string to be compared
+ * @param {Object} options The method configuration
+ * @param {Number} [options.satisfactionScore] The minimum score of almost the same to say it's really almost the same. ***.85** by default*
+ * @param {Number} [options.minLenProximity] If the two strings have different lengths, when will it be too much? ***.75** by default*
+ * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference? ***False** by default*
+ * 
+ * @returns {Boolean} Are they almost **NOT** the same?
+ */
 String.prototype.unalike = function (compare, options = {}) {
     return unalike(this, compare, options);
 }

@@ -66,7 +66,17 @@ exports.contains = contains;
 /**
  * String implementations
  */
-// Contains
+
+/**
+ * Attempts to find a busstring inside the original string
+ * 
+ * @param {String} compare The second string to be compared
+ * @param {Object} [options] The configuration parameters
+ * @param {Boolean} [options.inOrder] Must it be in the same exact order? ***True** by default*
+ * @param {Boolean} [options.caseSensitive] Will it take into account upper/lower case difference? ***False** by default*
+ * 
+ * @returns {Boolean} Does it contain the substring?
+ */
 String.prototype.contains = function (compare, options = {}) {
     return contains(this, compare, options);
 }
