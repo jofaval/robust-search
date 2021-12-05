@@ -24,7 +24,7 @@ import {
     notQuite,
     isMatch,
     search,
-    searchNot,
+    exclude,
     contains
 } from "robust-search"
 ````
@@ -75,9 +75,9 @@ Busca una coincidencia en un `array` usando los métodos de arriba
 // String search
 search([ "test", "hello", "world!" ], "test") // devuelve ["test"]
 ````
-### searchNot
+### exclude
 Busca los que no son una coincidencia en un `array` usando los métodos de arriba
 ````
-// String searchNot
-searchNot([ "test", "hello", "world!" ], "test") // devuelve ["hello", "world!"]
+// String exclude
+exclude([ "test", "hello", "world!" ], "test") // devuelve ["hello", "world!"]
 ````

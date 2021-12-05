@@ -43,7 +43,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | original |  **yes**  | `String` | La string original sobre la que comparar |  `null` |
 | compare  |  **yes**  | `String` | La segunda string a comparar             |  `null` |
 
-## Search/SearchNot parameters
+## Search/Exclude parameters
 **Returns** `Array`
 | nombre   | requerido |   tipo   | descripción                              | defecto |
 |----------|:---------:|:--------:|------------------------------------------|:-------:|

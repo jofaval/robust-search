@@ -47,7 +47,7 @@ const search = (dataset, original, options = {}) => {
  * 
  * @returns {Array} The occurences, if empty, it wasn't found
  */
-const searchNot = (dataset, original, options = {}) => {
+const exclude = (dataset, original, options = {}) => {
     let occurrences = [];
 
     const datasetLen = dataset.length
@@ -67,7 +67,7 @@ const searchNot = (dataset, original, options = {}) => {
 
 exports.isMatch = isMatch;
 exports.search = search;
-exports.searchNot = searchNot;
+exports.exclude = exclude;
 
 /**
  * String implementations

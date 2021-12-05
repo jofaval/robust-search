@@ -25,7 +25,7 @@ import {
     notQuite,
     isMatch,
     search,
-    searchNot,
+    exclude,
     contains
 } from "robust-search"
 ````
@@ -76,9 +76,9 @@ Searchs using the above methods inside an `array`
 // String search
 search([ "test", "hello", "world!" ], "test") // returns ["test"]
 ````
-### searchNot
+### exclude
 Searchs for non-matches using the above methods inside an `array`
 ````
-// String searchNot
-searchNot([ "test", "hello", "world!" ], "test") // returns ["hello", "world!"]
+// String exclude
+exclude([ "test", "hello", "world!" ], "test") // returns ["hello", "world!"]
 ````
