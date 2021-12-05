@@ -1,9 +1,9 @@
-# Parameters #
+# Parámetros #
 Also available in English [![es](https://img.shields.io/badge/lang-es-blue.svg)](/doc/en/parameters.md)
 
 Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://www.tablesgenerator.com/markdown_tables)
 
-## Equal/Diff/Different parameters
+## Parámetros de Equal/Diff/Different
 **Returns** `Boolean`
 | nombre                | requerido |    tipo    | descripción                                                    | defecto |
 |-----------------------|:---------:|:----------:|----------------------------------------------------------------|:-------:|
@@ -15,7 +15,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | options.ignoreSpace   |    no     |  `Boolean` | ¿Ignorará espacios?                                            | `false` |
 | options.ignoreChars   |    no     | `String[]` | Ignora los carácteres recibidos.                               | `false` |
 
-## Exact parameters
+## Parámetros de Exact
 **Returns** `Boolean`
 | nombre                | requerido |    tipo    | descripción                               | defecto |
 |-----------------------|:---------:|:----------:|-------------------------------------------|:-------:|
@@ -25,7 +25,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | options.ignoreSpace   |    no     |  `Boolean` | ¿Ignorará espacios?                       | `false` |
 | options.ignoreChars   |    no     | `String[]` | Ignora los carácteres recibidos.          | `false` |
 
-## Almost/Unalike parameters
+## Parámetros de Almost/Unalike
 **Returns** `Boolean`
 | nombre                    | requerido |    tipo   | descripción                                                                     | defecto |
 |---------------------------|:---------:|:---------:|---------------------------------------------------------------------------------|:-------:|
@@ -36,7 +36,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | options.minLenProximity   |    no     |  `Number` | Si la longitud de las strings es diferente, ¿a partir de cuánto será demasiado? |   `.75`  |
 | options.caseSensitive     |    no     | `Boolean` | ¿Tendrá en cuenta la diferencia entre mayúsculas y minúsculas?                  | `false` |
 
-## Contains parameters
+## Parámetros de Contains
 **Returns** `Boolean`
 | nombre                | requerido |    tipo   | descripción                                                    | defecto |
 |-----------------------|:---------:|:---------:|----------------------------------------------------------------|:-------:|
@@ -46,14 +46,14 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | options.inOrder       |    no     | `Boolean` | ¿Ha de ser exactamente en el mismo orden?                      |  `true` |
 | options.caseSensitive |    no     | `Boolean` | ¿Tendrá en cuenta la diferencia entre mayúsculas y minúsculas? | `false` |
 
-## IsMatch/IsNotMatch parameters
+## Parámetros de IsMatch/IsNotMatch
 **Returns** `Boolean`
 | nombre   | requerido |   tipo   | descripción                              | defecto |
 |----------|:---------:|:--------:|------------------------------------------|:-------:|
 | original |  **yes**  | `String` | La string original sobre la que comparar |  `null` |
 | compare  |  **yes**  | `String` | La segunda string a comparar             |  `null` |
 
-## Search/Exclude parameters
+## Parámetros de Search/Exclude
 **Returns** `Array`
 | nombre   | requerido |   tipo   | descripción                              | defecto |
 |----------|:---------:|:--------:|------------------------------------------|:-------:|
