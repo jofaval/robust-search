@@ -76,3 +76,7 @@ exports.exclude = exclude;
 String.prototype.isMatch = function (compare, options = {}) {
     return isMatch(this, compare, options);
 }
+// Is not a match
+String.prototype.isNotMatch = function (compare, options = {}) {
+    return !isMatch(this, compare, options);
+}
