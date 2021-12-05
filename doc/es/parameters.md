@@ -8,8 +8,8 @@ Compara dos strings para saber si son iguales o son diferentes
 **Devolverá** `Boolean`
 | nombre                | requerido |    tipo    | descripción                                                    | defecto |
 |-----------------------|:---------:|:----------:|----------------------------------------------------------------|:-------:|
-| original              |  **yes**  |  `String`  | La string original sobre la que comparar.                      |  `null` |
-| compare               |  **yes**  |  `String`  | La segunda string a comparar.                                  |  `null` |
+| original              |  **sí**   |  `String`  | La string original sobre la que comparar.                      |  `null` |
+| compare               |  **sí**   |  `String`  | La segunda string a comparar.                                  |  `null` |
 | options               |    no     |  `Object`  | Las opciones de comparación.                                   |   `{}`  |
 | options.caseSensitive |    no     |  `Boolean` | ¿Tendrá en cuenta la diferencia entre mayúsculas y minúsculas? | `false` |
 | options.exact         |    no     |  `Boolean` | ¿Será una coincidencia exacta?                                 | `false` |
@@ -21,8 +21,8 @@ Compara dos strings para saber si son exactamente la misma
 **Devolverá** `Boolean`
 | nombre                | requerido |    tipo    | descripción                               | defecto |
 |-----------------------|:---------:|:----------:|-------------------------------------------|:-------:|
-| original              |  **yes**  |  `String`  | La string original sobre la que comparar. |  `null` |
-| compare               |  **yes**  |  `String`  | La segunda string a comparar.             |  `null` |
+| original              |  **sí**   |  `String`  | La string original sobre la que comparar. |  `null` |
+| compare               |  **sí**   |  `String`  | La segunda string a comparar.             |  `null` |
 | options               |    no     |  `Object`  | Las opciones de comparación.              |   `{}`  |
 | options.ignoreSpace   |    no     |  `Boolean` | ¿Ignorará espacios?                       | `false` |
 | options.ignoreChars   |    no     | `String[]` | Ignora los carácteres recibidos.          | `false` |
@@ -32,8 +32,8 @@ Compara dos strings para saber si son casi la misma no son casi la misma
 **Devolverá** `Boolean`
 | nombre                    | requerido |    tipo   | descripción                                                                     | defecto |
 |---------------------------|:---------:|:---------:|---------------------------------------------------------------------------------|:-------:|
-| original                  |  **yes**  |  `String` | La string original sobre la que comparar                                        |  `null` |
-| compare                   |  **yes**  |  `String` | La segunda string a comparar                                                    |  `null` |
+| original                  |  **sí**   |  `String` | La string original sobre la que comparar                                        |  `null` |
+| compare                   |  **sí**   |  `String` | La segunda string a comparar                                                    |  `null` |
 | options                   |    no     |  `Object` | La configuración del método                                                     |   `{}`  |
 | options.satisfactionScore |    no     |  `Number` | El mínimo de acierto a partir del cual se considera que es casi el mismo.       |  `.85`  |
 | options.minLenProximity   |    no     |  `Number` | Si la longitud de las strings es diferente, ¿a partir de cuánto será demasiado? |   `.75`  |
@@ -44,8 +44,8 @@ Compara dos strings para saber si la primera contiene la substring resultante qu
 **Devolverá** `Boolean`
 | nombre                | requerido |    tipo   | descripción                                                    | defecto |
 |-----------------------|:---------:|:---------:|----------------------------------------------------------------|:-------:|
-| original              |  **yes**  |  `String` | La string original sobre la que comparar                       |  `null` |
-| original              |  **yes**  |  `String` | La segunda string a comparar                                   |  `null` |
+| original              |  **sí**   |  `String` | La string original sobre la que comparar                       |  `null` |
+| original              |  **sí**   |  `String` | La segunda string a comparar                                   |  `null` |
 | options               |    no     |  `Object` | Los parámetros de configuración                                |   `{}`  |
 | options.inOrder       |    no     | `Boolean` | ¿Ha de ser exactamente en el mismo orden?                      |  `true` |
 | options.caseSensitive |    no     | `Boolean` | ¿Tendrá en cuenta la diferencia entre mayúsculas y minúsculas? | `false` |
@@ -55,17 +55,17 @@ Compara dos strings para saber si hay coincidencia entre ellas, bien sea porque 
 **Devolverá** `Boolean`
 | nombre   | requerido |   tipo   | descripción                              | defecto |
 |----------|:---------:|:--------:|------------------------------------------|:-------:|
-| original |  **yes**  | `String` | La string original sobre la que comparar |  `null` |
-| compare  |  **yes**  | `String` | La segunda string a comparar             |  `null` |
+| original |  **sí**   | `String` | La string original sobre la que comparar |  `null` |
+| compare  |  **sí**   | `String` | La segunda string a comparar             |  `null` |
 
 ## Parámetros de Search/Exclude
 Realiza una búsqueda en un array de strings usando los métodos de comparación mencionados anteriormente
 **Devolverá** `Array`
 | nombre            | requerido |        tipo        | descripción                              | defecto |
 |-------------------|:---------:|:------------------:|------------------------------------------|:-------:|
-| dataset           |  **yes**  |       `Array`      | The array containing the strings         |  `null` |
-| original          |  **yes**  |      `String`      | La string original sobre la que comparar |  `null` |
-| options           |     no    |      `Object`      | Las opciones de configuración            |   `{}`  |
-| options.justThere |     no    |      `Object`      | Solamente comprobará si está ahí         | `false` |
-| options.filter    |     no    | `CallableFunction` | La función de filtrado                   |  `null` |
-| options.json      |     no    |      `Boolean`     | ¿El array contiene valores json/objeto?  | `false` |
+| dataset           |  **sí**   |       `Array`      | The array containing the strings         |  `null` |
+| original          |  **sí**   |      `String`      | La string original sobre la que comparar |  `null` |
+| options           |    no     |      `Object`      | Las opciones de configuración            |   `{}`  |
+| options.justThere |    no     |      `Object`      | Solamente comprobará si está ahí         | `false` |
+| options.filter    |    no     | `CallableFunction` | La función de filtrado                   |  `null` |
+| options.json      |    no     |      `Boolean`     | ¿El array contiene valores json/objeto?  | `false` |
