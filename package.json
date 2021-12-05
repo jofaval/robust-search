@@ -1,6 +1,6 @@
 {
   "name": "robust-search",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Allows for a robust string comparison with almost matching options",
   "main": "index.js",
   "scripts": {
