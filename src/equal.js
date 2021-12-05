@@ -64,7 +64,7 @@ const equal = (original, compare, options = {}) => {
  * @param {Boolean} [options.ignoreSpaces] Will it ignore spaces? ***False** by default*
  * @param {String[]} [options.ignoreChars] Ignores the given chars. ***False** by default*
  * 
- * @returns {Boolean} If they're equal or not.
+ * @returns {Boolean} If they're exact or not.
  */
 const exact = (compare, options = {}) => {
     return equal(this, compare, { ...options, exact: true, caseSensitive: true });
