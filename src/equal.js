@@ -56,6 +56,21 @@ const equal = (original, compare, options = {}) => {
 };
 
 /**
+ * Comapres two strings and returns if they're exactly the same.
+ * 
+ * @param {String} original The original string to compare.
+ * @param {String} compare The second string to be compared.
+ * @param {Object} [options] The comparison options.
+ * @param {Boolean} [options.ignoreSpaces] Will it ignore spaces? ***False** by default*
+ * @param {String[]} [options.ignoreChars] Ignores the given chars. ***False** by default*
+ * 
+ * @returns {Boolean} If they're equal or not.
+ */
+const exact = (compare, options = {}) => {
+    return equal(this, compare, { ...options, exact: true, caseSensitive: true });
+}
+
+/**
  * Comapres two strings and returns if they're different, **NOT** equal.
  * 
  * @param {String} original The original string to compare.
@@ -86,8 +101,8 @@ String.prototype._equal = function (compare) {
 }
 
 // Exact
-String.prototype.exact = function (compare) {
-    return equal(this, compare, { exact: true });
+String.prototype.exact = function (compare, options = {}) {
+    return exact(this, compare, options);
 }
 // Native implementation
 String.prototype._exact = function (compare) {
