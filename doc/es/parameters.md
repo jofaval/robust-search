@@ -5,7 +5,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 
 ## Parámetros de Equal/Diff/Different
 Compara dos strings para saber si son iguales o son diferentes
-**Returns** `Boolean`
+**Devolverá** `Boolean`
 | nombre                | requerido |    tipo    | descripción                                                    | defecto |
 |-----------------------|:---------:|:----------:|----------------------------------------------------------------|:-------:|
 | original              |  **yes**  |  `String`  | La string original sobre la que comparar.                      |  `null` |
@@ -18,7 +18,7 @@ Compara dos strings para saber si son iguales o son diferentes
 
 ## Parámetros de Exact
 Compara dos strings para saber si son exactamente la misma
-**Returns** `Boolean`
+**Devolverá** `Boolean`
 | nombre                | requerido |    tipo    | descripción                               | defecto |
 |-----------------------|:---------:|:----------:|-------------------------------------------|:-------:|
 | original              |  **yes**  |  `String`  | La string original sobre la que comparar. |  `null` |
@@ -29,7 +29,7 @@ Compara dos strings para saber si son exactamente la misma
 
 ## Parámetros de Almost/Unalike
 Compara dos strings para saber si son casi la misma no son casi la misma
-**Returns** `Boolean`
+**Devolverá** `Boolean`
 | nombre                    | requerido |    tipo   | descripción                                                                     | defecto |
 |---------------------------|:---------:|:---------:|---------------------------------------------------------------------------------|:-------:|
 | original                  |  **yes**  |  `String` | La string original sobre la que comparar                                        |  `null` |
@@ -41,7 +41,7 @@ Compara dos strings para saber si son casi la misma no son casi la misma
 
 ## Parámetros de Contains
 Compara dos strings para saber si la primera contiene la substring resultante que es la otra
-**Returns** `Boolean`
+**Devolverá** `Boolean`
 | nombre                | requerido |    tipo   | descripción                                                    | defecto |
 |-----------------------|:---------:|:---------:|----------------------------------------------------------------|:-------:|
 | original              |  **yes**  |  `String` | La string original sobre la que comparar                       |  `null` |
@@ -52,7 +52,7 @@ Compara dos strings para saber si la primera contiene la substring resultante qu
 
 ## Parámetros de IsMatch/IsNotMatch
 Compara dos strings para saber si hay coincidencia entre ellas, bien sea porque son iguales, o porque se parecen
-**Returns** `Boolean`
+**Devolverá** `Boolean`
 | nombre   | requerido |   tipo   | descripción                              | defecto |
 |----------|:---------:|:--------:|------------------------------------------|:-------:|
 | original |  **yes**  | `String` | La string original sobre la que comparar |  `null` |
@@ -60,7 +60,7 @@ Compara dos strings para saber si hay coincidencia entre ellas, bien sea porque 
 
 ## Parámetros de Search/Exclude
 Realiza una búsqueda en un array de strings usando los métodos de comparación mencionados anteriormente
-**Returns** `Array`
+**Devolverá** `Array`
 | nombre            | requerido |        tipo        | descripción                              | defecto |
 |-------------------|:---------:|:------------------:|------------------------------------------|:-------:|
 | dataset           |  **yes**  |       `Array`      | The array containing the strings         |  `null` |
