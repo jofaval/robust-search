@@ -72,6 +72,8 @@ const almost = (original, compare, options = {}) => {
     let tempCompareIndex = tempCompare.length;
     
     // TODO: implement inOrder option so it's a closer match, if wanted
+    // TODO: it just checks if the chars are in, take a more precise approach so
+    // it compares if almost all the chars are in order, and just some aren't quite
 
     // Loop through the original
     for (let originalIndex = 0; originalIndex < originalLen; originalIndex++) {
