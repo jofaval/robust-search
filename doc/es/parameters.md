@@ -36,7 +36,7 @@ Tablas generadas con [https://www.tablesgenerator.com/markdown_tables](https://w
 | options.inOrder       |    no     | `Boolean` | ¿Ha de ser exactamente en el mismo orden?                      |  `true` |
 | options.caseSensitive |    no     | `Boolean` | ¿Tendrá en cuenta la diferencia entre mayúsculas y minúsculas? | `false` |
 
-## isMatch parameters
+## IsMatch/IsNotMatch parameters
 **Returns** `Boolean`
 | nombre   | requerido |   tipo   | descripción                              | defecto |
 |----------|:---------:|:--------:|------------------------------------------|:-------:|

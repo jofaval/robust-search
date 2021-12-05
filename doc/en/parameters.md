@@ -36,7 +36,7 @@ Tables generated with [https://www.tablesgenerator.com/markdown_tables](https://
 | options.inOrder       |    no    | `Boolean` | Must it be in the same exact order?                    |  `true` |
 | options.caseSensitive |    no    | `Boolean` | Will it take into account upper/lower case difference? | `false` |
 
-## isMatch parameters
+## IsMatch/IsNotMatch parameters
 **Returns** `Boolean`
 | name     | required |   type   | description                      | default |
 |----------|:--------:|:--------:|----------------------------------|:-------:|
