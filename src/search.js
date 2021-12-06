@@ -32,9 +32,6 @@ const isObject = variable => typeof variable === 'object' && variable !== null;
  * @returns {Array} The occurences, if empty, it wasn't found
  */
 const search = (dataset, original, options = {}) => {
-    // TODO: implement the possibility to find number of ocurrecences? return value
-    // and possibility to find if it's just there, not the number of times
-
     // Default values are added
     options = { json: false, filter: null, justThere: false, ...options, }
     
