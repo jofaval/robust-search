@@ -1,4 +1,8 @@
-### 05/12/2021 (v1.0.5 - v1.0.?)
+### 06/12/2021 (v1.0.7 - v1.0.?)
+- Implemented ignoreChars
+- Refactor default params
+
+### 05/12/2021 (v1.0.5 - v1.0.7)
 - justThere in search implemented
 - Refactored parameters doc, and polished mistakes in es docs
 - Renamed searchNot to exclude
