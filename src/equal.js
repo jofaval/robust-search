@@ -29,9 +29,6 @@ const equal = (original, compare, options = {}) => {
         compare = compare.replace(/\s+/, '');
     }
 
-    // Ignores the given chars
-    // TODO: to implement, inside the for-loop or an outside regex replace? it'd be faster the first option
-
     // If it's exact, there's no need to compare anymore
     if (options.exact) return original === compare;
 
@@ -46,6 +43,13 @@ const equal = (original, compare, options = {}) => {
     for (let charIndex = 0; charIndex < originalLen; charIndex++) {
         const originalChar = original[charIndex];
         const compareChar = compare[charIndex];
+
+        // TODO: to implement, inside the for-loop or an outside regex replace? it'd be faster the first option
+        // Ignores the given chars
+        if (options?.ignoreChars && (
+            options.ignoreChars.includes(originalChar)
+            || options.ignoreChars.includes(compareChar)
+        )) continue;
 
         // As soon as they're not the same value, it's returned false
         if (originalChar != compareChar) return false;
