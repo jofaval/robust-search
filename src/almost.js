@@ -43,9 +43,12 @@ const almost = (original, compare, options = {}) => {
     if (!areStrings(original, compare)) return false;
 
     // Default values are set
-    if (!options?.satisfactionScore) options.satisfactionScore = .85;
-    if (!options?.minLenProximity) options.minLenProximity = .75;
-    if (!options?.caseSensitive) options.caseSensitive = false;
+    options = {
+        satisfactionScore = .85,
+        minLenProximity = .75,
+        caseSensitive = false,
+        ...options
+    };
 
     const originalLen = original.length;
     const compareLen = compare.length;

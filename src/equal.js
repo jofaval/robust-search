@@ -13,9 +13,13 @@
  */
 const equal = (original, compare, options = {}) => {
     // If they don't get filled, default values are set in
-    if (!options?.caseSensitive) options.caseSensitive = false;
-    if (!options?.exact) options.exact = false;
-    if (!options?.ignoreSpaces) options.ignoreSpaces = false;
+    options = {
+        exact = false,
+        caseSensitive = false,
+        ignoreChars = [],
+        ignoreSpaces = false,
+        ...options
+    };
 
     // If it's not caseSensitive, characters will be forced to lowercase
     if (!options.caseSensitive) {
