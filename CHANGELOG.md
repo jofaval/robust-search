@@ -1,8 +1,18 @@
+# CHANGELOG #
+All the changes made to this project, wether they are bugfixes, additions, modifications, etc.
+
+## 2021-12-19
 ### 2021-12-06 (v1.0.7 - v1.0.?)
+### Modified
+- CHANGELOG.md formatting
+
+## 2021-12-06 (v1.0.7 - v1.0.?)
+### Added
 - Implemented ignoreChars
 - Refactor default params
 
-### 2021-12-05 (v1.0.5 - v1.0.7)
+## 2021-12-05 (v1.0.5 - v1.0.7)
+### Added
 - justThere in search implemented
 - Refactored parameters doc, and polished mistakes in es docs
 - Renamed searchNot to exclude
@@ -13,7 +23,8 @@
 - Implemented exact standalone function
 - Documented the new String.prototype implementations
 
-### 2021-12-04 (v1.0.0 - v1.0.4 )
+## 2021-12-04 (v1.0.0 - v1.0.4 )
+### Added
 - Project started
 - Github repository created
 - Draft defined
