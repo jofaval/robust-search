@@ -4,6 +4,7 @@ All the changes made to this project, wether they are bugfixes, additions, modif
 ## 2021-12-19
 ### Added
 - Wiki pages (Home and Parameters)
+- Add CHANGELOG to Wiki
 
 ### Modified
 - CHANGELOG.md formatting
