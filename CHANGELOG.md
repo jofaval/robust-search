@@ -2,7 +2,9 @@
 All the changes made to this project, wether they are bugfixes, additions, modifications, etc.
 
 ## 2021-12-19
-### 2021-12-06 (v1.0.7 - v1.0.?)
+### Added
+- Wiki pages (Home and Parameters)
+
 ### Modified
 - CHANGELOG.md formatting
 
