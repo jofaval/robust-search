@@ -4,9 +4,11 @@ All the changes made to this project, wether they are bugfixes, additions, modif
 ## 2022-01-01 (v1.0.8)
 ### Added
 - Instalation guide on all langs
+- NPM Package badge
 
 ### Modified
 - Add missing javascript lang on markdown
+- CHANGELOG.md versions
 
 ## 2021-12-19 (v1.0.7)
 ### Added
