@@ -1,14 +1,14 @@
 # CHANGELOG #
 All the changes made to this project, wether they are bugfixes, additions, modifications, etc.
 
-## 2022-01-01
+## 2022-01-01 (v1.0.8)
 ### Added
 - Instalation guide on all langs
 
 ### Modified
 - Add missing javascript lang on markdown
 
-## 2021-12-19
+## 2021-12-19 (v1.0.7)
 ### Added
 - Wiki pages (Home and Parameters)
 - Add CHANGELOG to Wiki
