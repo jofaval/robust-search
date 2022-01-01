@@ -5,6 +5,9 @@ All the changes made to this project, wether they are bugfixes, additions, modif
 ### Added
 - Instalation guide on all langs
 
+### Modified
+- Add missing javascript lang on markdown
+
 ## 2021-12-19
 ### Added
 - Wiki pages (Home and Parameters)

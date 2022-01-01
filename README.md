@@ -28,7 +28,7 @@ npm i --save-dev robust-search
 
 ### Import
 Without this, it won't work
-````
+````javascript
 import {
     equal,
     different,
@@ -42,7 +42,7 @@ import {
 ````
 ### String.prototype.equal
 Is a `string` the same as another?
-````
+````javascript
 // String equal
 "test".equal("test") // returns true
 
@@ -51,31 +51,31 @@ Is a `string` the same as another?
 ````
 ### String.prototype.diff, or different
 Is a `string` not the same as another?
-````
+````javascript
 // String not equal
 "test".diff("tset") // returns true
 ````
 ### String.prototype.almost
 Is a `string` almost same as another?
-````
+````javascript
 // String almost
 "test".almost("tset") // returns true
 ````
 ### String.prototype.unalike
 Is a `string` not quite the same as another?
-````
+````javascript
 // String unalike
 "test".unalike("tset") // returns false
 ````
 ### String.prototype.isMatch
 This will use all of the above to check for a match
-````
+````javascript
 // String isMatch (does an almost or equal)
 "test".isMatch("tset") // returns true
 ````
 ### String.prototype.contains
 Does it contain the `substring` given? Sort of an `includes`
-````
+````javascript
 // String contains
 "test".contains("est") // returns true
 // String doesn't contain
@@ -83,13 +83,13 @@ Does it contain the `substring` given? Sort of an `includes`
 ````
 ### search
 Searchs using the above methods inside an `array`
-````
+````javascript
 // String search
 search([ "test", "hello", "world!" ], "test") // returns ["test"]
 ````
 ### exclude
 Searchs for non-matches using the above methods inside an `array`
-````
+````javascript
 // String exclude
 exclude([ "test", "hello", "world!" ], "test") // returns ["hello", "world!"]
 ````
