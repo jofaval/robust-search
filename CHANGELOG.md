@@ -1,6 +1,10 @@
 # CHANGELOG #
 All the changes made to this project, wether they are bugfixes, additions, modifications, etc.
 
+## 2022-01-01
+### Added
+- Instalation guide on all langs
+
 ## 2021-12-19
 ### Added
 - Wiki pages (Home and Parameters)

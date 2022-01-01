@@ -15,6 +15,17 @@ So it's objective it's to give more tools to compare, taking into account user's
 ## Usage
 For the complete documentation, [click here](/doc/en/)
 
+### Install
+#### Browser
+```html
+<script src="https://cdn.jsdelivr.net/npm/robust-search/index.js"></script>
+```
+
+#### Node.js
+```shell
+npm i --save-dev robust-search
+```
+
 ### Import
 Without this, it won't work
 ````

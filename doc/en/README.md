@@ -14,6 +14,17 @@ For the parameters, [click here](/doc/en/parameters.md)
 <br />
 For advanced examples, [click here](/doc/en/advanced.md)
 
+### Install
+#### Browser
+```html
+<script src="https://cdn.jsdelivr.net/npm/robust-search/index.js"></script>
+```
+
+#### Node.js
+```shell
+npm i --save-dev robust-search
+```
+
 ### Import
 Without this, it won't work
 ````
