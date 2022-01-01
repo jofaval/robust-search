@@ -1,7 +1,7 @@
 # Robust Search #
 [![Available in English](https://img.shields.io/badge/lang-en-blue.svg)](/doc/en/)
 
-[![npm version](https://badge.fury.io/js/robust-search.svg)](http://badge.fury.io/js/robust-search)
+[![npm version](https://badge.fury.io/js/robust-search.svg)](http://badge.fury.io/js/robust-search)\
 [![NPM](https://nodei.co/npm/robust-search.png?downloads=true)](https://nodei.co/npm/robust-search/)
 
 Descárgatelo en, [NPM-Package site](https://www.npmjs.com/package/robust-search) o https://www.npmjs.com/package/robust-search

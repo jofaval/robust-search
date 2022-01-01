@@ -3,7 +3,7 @@
 [![Available in English](https://img.shields.io/badge/lang-en-blue.svg)](/doc/en/)
 [![Disponible en Castellano](https://img.shields.io/badge/lang-es-red.svg)](/doc/es/)
 
-[![npm version](https://badge.fury.io/js/robust-search.svg)](http://badge.fury.io/js/robust-search)
+[![npm version](https://badge.fury.io/js/robust-search.svg)](http://badge.fury.io/js/robust-search)\
 [![NPM](https://nodei.co/npm/robust-search.png?downloads=true)](https://nodei.co/npm/robust-search/)
 
 Package details at: [robust-search](https://www.npmjs.com/package/robust-search) or https://www.npmjs.com/package/robust-search
