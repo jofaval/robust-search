@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - CHANGELOD.md standards
 
+### Modified
+- Updated wiki pages
+
 ## 2022-01-01 (v1.0.8)
 ### Added
 - Instalation guide on all langs
