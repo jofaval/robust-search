@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Modified
 - Updated wiki pages
 
+### Fixed
+- Now commands on `markdown` use correct type `bash`
+
 ## 2022-01-01 (v1.0.8)
 ### Added
 - Instalation guide on all langs

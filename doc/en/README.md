@@ -24,7 +24,7 @@ For advanced examples, [click here](/doc/en/advanced.md)
 ```
 
 #### Node.js
-```shell
+```bash
 npm i --save-dev robust-search
 ```
 

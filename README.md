@@ -24,7 +24,7 @@ For the complete documentation, [click here](/doc/en/)
 ```
 
 #### Node.js
-```shell
+```bash
 npm i --save-dev robust-search
 ```
 
